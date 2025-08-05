@@ -1,8 +1,9 @@
-// Задача 3. Ширина елемента
+"use strict";
+
 function getElementWidth(content, padding, border) {
   const boxSizing =
-    Number.parseInt(content) +
-    Number.parseInt(padding) * 2 +
+    Number.parseFloat(content) +
+    Number.parseFloat(padding) * 2 +
     Number.parseFloat(border) * 2; // Припустимо, що box-sizing - content-box
   return boxSizing + "px";
 }
