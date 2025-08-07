@@ -5,7 +5,7 @@ function getElementWidth(content, padding, border) {
     Number.parseFloat(content) +
     Number.parseFloat(padding) * 2 +
     Number.parseFloat(border) * 2; // Припустимо, що box-sizing - content-box
-  return boxSizing + "px";
+  return boxSizing;
 }
 
 console.log(getElementWidth("50px", "8px", "4px")); // 74
